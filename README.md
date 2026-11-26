@@ -63,8 +63,8 @@ Make a backup of your ROM and your save before patching.
 ## Tested
 
 - Regular battles from the start of the game to the end
-- Every boss and special battle, including Gilgamesh, Exdeath, Omega and Necrophobe
-- Galuf's big story fight against Exdeath
+- Every boss and special battle in the game
+- The big scripted story battles
 - Jump, Mimic, Hide, Kick, Aim, Flee and running away with L and R
 - Stop, Paralyze, Berserk, Confuse, Sleep and Quick
 - Preemptive strikes and back attacks
