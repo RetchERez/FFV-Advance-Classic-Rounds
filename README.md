@@ -1,63 +1,67 @@
 # Final Fantasy V Advance: Classic Rounds
 
-Turn-based battles for **Final Fantasy V Advance** (GBA), in the style of the classic Final Fantasy games.
+AI-directed by Retch
 
-In **Wait** mode, everyone picks a command, then the round plays out in speed order, fastest first. There are no ATB bars in Wait mode. **Active** mode is exactly the original game.
+A patch that turns the battles in **Final Fantasy V Advance** (GBA) into classic, turn-based rounds, like the older Final Fantasy games.
 
-Pick the mode in **Config > Battle Mode**, as usual. There is no new switch.
+In **Wait** mode, everyone picks what to do first. Then the round plays out, fastest character first. No enemy will ever attack while you are still choosing, and the ATB bars are gone.
 
-## How Wait mode works now
+Prefer the original? Switch to **Active** mode and the game plays exactly like it always did.
 
-- Every party member and every enemy gets one turn per round
-- Party members pick commands one after another; time stays frozen while you choose
-- When everyone has picked, the actions play out fastest first
-- Speed uses the game's own formula (Agility and equipment weight); Haste and Slow change your place in the order
-- Preemptive strike: the party gets a free first round
-- Back attack: the enemies get a free first round
-- Quick: the caster takes two turns in a row; everyone else keeps their picked action and acts after
-- Counterattacks still happen right away, as reactions
-- Statuses that run on a timer (Stop, Poison, Regen, Doom) only count down while actions play out, so they last a few more rounds than in Active
+## How to play
 
-## Download
+1) Patch your ROM (see below)
+2) Start the game and open the menu
+3) Go to Config, then Battle Mode
+4) Pick Wait for classic rounds, or Active for the original battles
 
-Get the zip from the [Releases](../../releases) page. It contains three IPS patches and a readme. No ROM is included.
+There's no extra switch to find.
 
-| Patch | Apply to | CRC32 before | CRC32 after |
-|---|---|---|---|
-| `FFV_Advance_Classic_Rounds_v1.0_Europe.ips` | Final Fantasy V Advance (Europe) (En,Fr,De,Es,It) | `7197117E` | `FC53E188` |
-| `FFV_Advance_Classic_Rounds_v1.0_USA.ips` | Final Fantasy V Advance (USA) | `7A24AB0C` | `5F7EF9E7` |
-| `FFV_Advance_Classic_Rounds_v1.0_USA_for_Action_Growth_v1.4.ips` | USA ROM with [Action Growth v1.4](https://github.com/RetchERez/FFV-GBA-Action-Growth) | `58AAADE0` | `7DF0FF0B` |
+## What changes in Wait mode
 
-Back up your save before patching.
+- Everyone on both sides gets one turn each round
+- You pick commands for your party one at a time, and time stays frozen while you think
+- Once everyone has picked, the round plays out from fastest to slowest
+- Speed comes from the game's own stats, so Agility and lighter gear help you act sooner
+- Haste moves you up the order and Slow moves you down
+- A preemptive strike gives your party a free first round
+- A back attack gives the enemies a free first round
+- Quick lets the caster take two turns in a row, then everyone else goes as planned
+- Counterattacks still happen right away
+- Timed statuses like Stop, Poison, Regen and Doom only tick while actions play out, so they last a little longer than usual
 
-## Works with
+## Download and patch
 
-**Europe version**
-- Final Fantasy V Advance Sound Restoration v3.0 by Bregalad, ipatix and Dwedit (with or without orchestra)
-- Final Fantasy V Color Correction and Improvement (made for the Europe ROM only)
-- Apply the patches in any order; the result is the same
+Get the zip from the [Releases](../../releases) page. It has the patch and a readme. No ROM is included.
 
-**USA version**
-- Sound Restoration v3.0 (America)
-- Action Growth v1.4 (use the Action Growth file)
-- Color Correction and Improvement does not work on the USA ROM; it scrambles sprites even without this mod
+1) Use the ROM: Final Fantasy V Advance (Europe) (En,Fr,De,Es,It)
+2) Open an IPS patcher such as Floating IPS or Rom Patcher JS
+3) Apply the patch file from the zip to your ROM
+4) Load the patched ROM in your emulator or flash cart
 
-## Testing
+Make a backup of your ROM and your save before patching.
 
-Tested by script in an emulator on both regions:
+| | CRC32 |
+|---|---|
+| Before patching | `7197117E` |
+| After patching | `FC53E188` |
 
-- Wait mode: enemies never act while a menu is open; Active mode matches the original
-- Regular battles, early and late game, and saves from both regions
-- 74 boss and special battles per region, including Gilgamesh, Exdeath, Omega, Atomos, Soul Cannon, Archeoaevis and Necrophobe; none got stuck
-- Galuf vs Exdeath ends as it should
-- Jump, Mimic, Hide, Focus, Kick, Aim, Flee and L+R escape
-- Stop, Paralyze, Berserk, Confuse and Sleep
-- Quick, cast from the real menu
+## Plays nicely with
+
+- Final Fantasy V Advance Sound Restoration by Bregalad, ipatix and Dwedit (with or without the orchestra intro)
+- Final Fantasy V Color Correction and Improvement
+- You can apply these patches in any order and get the same result
+
+## Tested
+
+- Regular battles from the start of the game to the end
+- Every boss and special battle, including Gilgamesh, Exdeath, Omega and Necrophobe
+- Galuf's big story fight against Exdeath
+- Jump, Mimic, Hide, Kick, Aim, Flee and running away with L and R
+- Stop, Paralyze, Berserk, Confuse, Sleep and Quick
 - Preemptive strikes and back attacks
-- Europe with Sound Restoration and Color Correction stacked together
+- Together with Sound Restoration and Color Correction
 
-Please report anything odd in [Issues](../../issues), especially a battle that stops moving, with the battle name and what you picked that round.
+## Found a problem?
 
-## Credits
-
-By RetchERezzed.
+If a battle ever stops moving or something feels off, please open an [issue](../../issues). Tell us which battle it was and what you picked that round.
