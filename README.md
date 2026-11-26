@@ -12,7 +12,7 @@ Prefer the original? Switch to **Active** mode and the game plays exactly like i
 
 | Wait mode | Active mode |
 |---|---|
-| ![Wait mode, no bars](screenshots/wait_mode_gilgamesh.png) | ![Active mode, original ATB](screenshots/active_mode_gilgamesh.png) |
+| ![Wait mode, no bars](screenshots/wait_mode_plains.png) | ![Active mode, original ATB bars](screenshots/active_mode_plains.png) |
 
 ## How to play
 
@@ -36,7 +36,7 @@ There's no extra switch to find.
 - Counterattacks still happen right away
 - Timed statuses like Stop, Poison, Regen and Doom only tick while actions play out, so they last a little longer than usual
 
-![Wait mode against Exdeath](screenshots/wait_mode_exdeath.png)
+![Wait mode in the first battle](screenshots/wait_mode_goblins.png)
 
 ## Download and patch
 
