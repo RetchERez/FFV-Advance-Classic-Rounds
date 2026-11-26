@@ -2,11 +2,17 @@
 
 AI-directed by Retch
 
+![Title screen](screenshots/title.png)
+
 A patch that turns the battles in **Final Fantasy V Advance** (GBA) into classic, turn-based rounds, like the older Final Fantasy games.
 
 In **Wait** mode, everyone picks what to do first. Then the round plays out, fastest character first. No enemy will ever attack while you are still choosing, and the ATB bars are gone.
 
 Prefer the original? Switch to **Active** mode and the game plays exactly like it always did.
+
+| Wait mode | Active mode |
+|---|---|
+| ![Wait mode, no bars](screenshots/wait_mode_gilgamesh.png) | ![Active mode, original ATB](screenshots/active_mode_gilgamesh.png) |
 
 ## How to play
 
@@ -29,6 +35,8 @@ There's no extra switch to find.
 - Quick lets the caster take two turns in a row, then everyone else goes as planned
 - Counterattacks still happen right away
 - Timed statuses like Stop, Poison, Regen and Doom only tick while actions play out, so they last a little longer than usual
+
+![Wait mode against Exdeath](screenshots/wait_mode_exdeath.png)
 
 ## Download and patch
 
