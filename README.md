@@ -62,6 +62,10 @@ Make a backup of your ROM and your save before patching.
 - Preemptive strikes and back attacks
 - Together with Sound Restoration and Color Correction
 
+## Special thanks
+
+- altaihero, for asking for a turn-based Final Fantasy Advance and inspiring this patch
+
 ## Found a problem?
 
 If a battle ever stops moving or something feels off, please open an [issue](../../issues). Tell us which battle it was and what you picked that round.
